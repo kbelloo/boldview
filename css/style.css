@@ -1,0 +1,311 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*================
+    typography.
+===================*/
+
+h4 {
+
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    padding: 0;
+
+
+}
+
+
+
+h2 {
+
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin: 0;
+    margin-top: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.motto {
+    color: #FFA51D;
+    padding: 1.5rem;
+}
+
+
+span {
+
+    font-weight: 900;
+}
+
+
+.intro p {
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFA51D;
+    margin: 0;
+    letter-spacing: 1.7px;
+}
+
+.intro .top-text {
+
+    font-size: 1rem;
+    letter-spacing: 1.7px;
+    margin: 0;
+    padding-top: 3px;
+    /* width: 200px; */
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid #FFA51D;
+    border-image: linear-gradient(to left, #FF713B, #FFA51D) 1;
+
+
+}
+
+.boldview {
+    
+    text-transform: uppercase;
+
+}
+
+
+.register {
+
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #FFA51D;
+    margin-top: 0;
+
+}
+
+
+.content-bottom {
+
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+
+}
+
+
+/*================
+   intro section
+===================*/
+
+.intro {
+
+    background-image: url(../images/puzzle.jpg);
+    background-color: #404040;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+
+}
+
+
+/*================
+   main section
+===================*/
+
+
+.content {
+
+    padding: 2em 1em;
+}
+
+.intro > *,
+.intro p,
+.content > * {
+
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*================
+      form
+===================*/
+
+.email-collector {
+
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+.btn {
+
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+input {
+
+    font-family: inherit;
+    margin-bottom: 0.875em;
+    text-align: center;
+    padding: 0.45em;
+    border: 1px solid #818181;
+    font-size: 1.3rem;
+}
+
+input:focus {
+
+    outline: none;
+}
+
+.btn {
+
+    display: inline-block;
+    background-image: linear-gradient(270deg, #FF713B 0%, #FFA51D 100%);
+    color: #fff;
+    padding: 1em 1.5em;
+    border: 0;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .25s;
+}
+
+.btn:hover,
+.btn:focus {
+
+    color: black;
+    transform: scale(1.1);
+}
+
+.btn:focus {
+
+    outline: none;
+}
+
+.text {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.intro .text p {
+
+    font-size: 1rem;
+    color: white;
+    text-transform: none;
+    padding: 0.5em 1.5em;
+    letter-spacing: 3.5px;
+    font-weight: 400;
+}
+
+
+.insidetext {
+    color: #FFA51D;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.intro .bottom-text {
+    font-size: 1rem;
+    letter-spacing: 1.7px;
+    margin: 0;
+    /* padding-top: 3px; */
+    /* width: 200px; */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+/*================
+    media queries
+===================*/
+
+@media (min-width: 800px) {
+
+    body {
+
+        font-size: 1.125rem;
+    }
+
+
+    h1 {
+
+        font-size: 3.5rem;
+    }
+
+    h2,
+    .intro p {
+
+        font-size: 1.75rem;
+        
+    }
+
+    main {
+
+        flex-direction: row;
+    }
+
+
+
+    .intro,
+    .content {
+
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .content {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro .top-text {
+
+        font-size: 1.5rem;
+    }
+
+    .intro .bottom-text {
+        font-size: 1.5rem;
+    }
+
+    .intro .text p {
+        
+        font-size: 1.5rem;
+        letter-spacing: 3.8px;
+    }
+    
+
+
+
+}
