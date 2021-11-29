@@ -249,7 +249,7 @@ input:focus {
     media queries
 ===================*/
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
 
     body {
 
@@ -273,7 +273,6 @@ input:focus {
 
         flex-direction: row;
     }
-
 
 
     .intro,
@@ -305,7 +304,6 @@ input:focus {
         letter-spacing: 3.8px;
     }
     
-
 
 
 }
