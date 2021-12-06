@@ -42,7 +42,7 @@ h2 {
     font-size: 1.2rem;
     font-weight: 900;
     margin: 0;
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
     margin-bottom: 2rem;
 }
 
@@ -172,7 +172,7 @@ input {
     font-family: inherit;
     margin-bottom: 0.875em;
     text-align: center;
-    padding: 0.45em;
+    padding: 0.35em;
     border: 1px solid #818181;
     font-size: 1.3rem;
 }
@@ -242,6 +242,37 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     
+}
+
+.btnn {
+
+    width: 20%;
+    border-radius: 7px;
+    display: inline-block;
+    background-image: linear-gradient(270deg, #FF713B 0%, #FFA51D 100%);
+    color: #fff;
+    padding: 1em 1.5em;
+    border: 0;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .25s;
+    margin-bottom: 2rem;
+}
+
+.btnn:hover,
+.btnn:focus {
+
+    transform: scale(1.1);
+}
+
+.btnn:focus {
+
+    outline: none;
 }
 
 
